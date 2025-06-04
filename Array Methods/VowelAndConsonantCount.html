@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+    Exercise3: Checking the First Letter of a Name
+
+    Instructions:
+    
+    1. Ask the user to enter their name.
+    2. Create a function that determines if the name starts with a vowel or a consonant.
+    3. If the name begins with a vowel, the function should return: "Your name starts with a vowel."
+    4. If the name starts with a consonant, the function should return: "Your name starts with a consonant."
+    5. If the name is empty string the function should return: "Invalid input. Please enter a name."
+    5. Display the result in the console.
+    -->
+
+    <script>
+      // Step 1: Prompt the user to enter their name
+      let nameInput = prompt("Enter your name:");
+
+      // Step 2: Function to check if the first letter is a vowel or consonant
+      function checkFirstLetter(name) {
+        if (!name) return "Invalid input. Please enter a name.";
+
+        // Get the first letter of the name (assuming input is not empty)
+        let firstLetter = name[0];
+
+        // Define vowels (without using includes or toLowerCase)
+        if (
+          firstLetter === "A" ||
+          firstLetter === "E" ||
+          firstLetter === "I" ||
+          firstLetter === "O" ||
+          firstLetter === "U" ||
+          firstLetter === "a" ||
+          firstLetter === "e" ||
+          firstLetter === "i" ||
+          firstLetter === "o" ||
+          firstLetter === "u"
+        ) {
+          return "Your name starts with a vowel.";
+        } else {
+          return "Your name starts with a consonant.";
+        }
+      }
+      // Step 4: Call the functions and display results in console
+      console.log(checkFirstLetter(nameInput));
+    </script>
+  </body>
+</html>

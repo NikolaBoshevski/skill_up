@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+
+    Exercise1: Simulating a Coffee Shop Queue with a Loop
+
+    1. Define an array named coffeeQueue containing a list of customer names in the order they arrive:
+    "Alice", "Bob", "Charlie", "Dana", and "Eli".
+    2. Use a while loop to simulate serving each customer one by one.
+        - Remove the first customer from the queue using the correct method.
+        - Print the name of the customer to indicate they have been served.
+    3. After each customer is served, print the updated queue to show which customers are still waiting in line.
+    4. Repeat until the queue is empty.
+
+    -->
+    <script>
+        // Step 1: Define an array with customer names in the coffee shop queue
+        let coffeeQueue = ["Alice", "Bob", "Charlie", "Dana", "Eli"];
+
+        // Step 2: Serve each customer until the queue is empty
+        while (coffeeQueue.length > 0) {
+            let servedCustomer = coffeeQueue.shift();  // Remove the first customer from the queue
+
+            // Step 3: Print the name of the served customer
+            console.log("Served:", servedCustomer);  // Outputs each served customer's name
+
+            // Step 4: Print the remaining queue
+            console.log("Waiting Customers:"+ coffeeQueue);  // Shows remaining customers in the queue
+        }
+
+    </script>
+</body>
+</html>

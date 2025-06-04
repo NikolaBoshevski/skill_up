@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Exercise3. Create an array with numbers from 1 through 100 and then expand the array by adding one more element, 101.
+            
+    Instructions:
+    1. Define an empty array.
+    2. Populate the array dynamically with a for loop and using the correct method.
+    3. Use the same method to expand the array.
+    4. Print the expanded array.
+    -->
+    <script>
+        let numbers = [];
+
+        // Step 2: Populate the array dynamically with a for loop
+        for (let i = 1; i <= 100; i++) {
+            numbers.push(i);
+        }
+
+        // Step 3: Use the push() method to expand the array
+        numbers.push(101);
+
+        // Output the final array to confirm
+        console.log(numbers); // This will output numbers from 1 to 101
+    </script>
+</body>
+</html>
