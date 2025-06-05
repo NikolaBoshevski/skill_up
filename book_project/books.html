@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="books-list">
+
+    </ul>
+    <script>
+        // Gutendex API fetch
+
+        // fetch("https://gutendex.com/books")
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log("Books:", data.results);
+        //         let bookList = document.getElementById("book-list");
+        //         data.results.map(book => {
+        //             let bookItem = document.createElement("li");
+        //             bookItem.innerHTML = `
+        //                   <li>
+        //                         <h2 class="title">${book.title}</h2>
+        //                         <h4 class="author">${book.author}</h4>
+        //                         <p class="genre"></p>
+        //                    </li>
+        //             `
+        //             bookList.appendChild(bookItem)
+
+        //         })
+        //     })
+        //     .catch(err => console.error("Gutenberg error:", err));
+
+        // custom json API code
+
+        let booksList = document.getElementById("books-list");
+        fetch("library.json")
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                data.map(book => {
+                    let bookItem = document.createElement("li");
+                    bookItem.innerHTML =
+                        `<li>
+                            <h3 class="title">${book.title}</h3>
+                            <h3 class="author">${book.author}</h3>
+                            <p class="genre">${book.genre}</p>
+                         </li>`
+                    booksList.appendChild(bookItem);
+                })
+            })
+            .catch(error => console.log(error))
+
+
+
+    </script>
+</body>
+
+</html>
