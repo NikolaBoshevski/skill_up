@@ -1,0 +1,65 @@
+[
+    {
+        "id": "book-001",
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "description": "A fantasy adventure about a hobbit named Bilbo who joins a quest to reclaim a lost dwarf kingdom.",
+        "rating": 4.8,
+        "cover": "https://picsum.photos/200/300"
+    },
+    {
+        "id": "book-002",
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "description": "A chilling dystopian novel about total surveillance and control by a totalitarian regime.",
+        "rating": 4.7,
+        "cover": "https://picsum.photos/200/300"
+    },
+    {
+        "id": "book-003",
+        "title": "Good Omens",
+        "author": "Neil Gaiman & Terry Pratchett",
+        "genre": "Comedy",
+        "description": "An angel and a demon team up to prevent the apocalypse in this witty and humorous tale.",
+        "rating": 4.6,
+        "cover": "https://picsum.photos/200/300"
+    },
+    {
+        "id": "book-004",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Classic",
+        "description": "A powerful novel about racial injustice in the Deep South, seen through the eyes of a child.",
+        "rating": 4.9,
+        "cover": "https://picsum.photos/200/300"
+    },
+    {
+        "id": "book-005",
+        "title": "The Martian",
+        "author": "Andy Weir",
+        "genre": "Science Fiction",
+        "description": "A stranded astronaut uses his engineering skills to survive on Mars in this smart, thrilling novel.",
+        "rating": 4.7,
+        "cover": "https://picsum.photos/200/300"
+    },
+    {
+        "id": "book-006",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "description": "A timeless romance that explores love, pride, and social standing in 19th-century England.",
+        "rating": 4.5,
+        "cover": "https://picsum.photos/200/300"
+    },
+    {
+        "id": "book-006",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "description": "A timeless romance that explores love, pride, and social standing in 19th-century England.",
+        "rating": 4.5,
+        "cover": "https://picsum.photos/200/300"
+    }
+]
